@@ -19,7 +19,7 @@ import { DropdownConfig } from './dropdown.config';
 export class DropdownDirective implements OnInit, OnDestroy {
   private dropdownService: DropdownService;
   /** if `true` dropdown will be opened */
-  @HostBinding('class.open')
+  @HostBinding('class.show')
   @HostBinding('class.active')
   @Input()
   public get isOpen(): boolean {
